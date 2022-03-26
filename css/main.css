@@ -1,0 +1,44 @@
+html {
+  --colour-highlight: hsl(211, 100%, 49%);
+  --colour-background: hsl(42, 0%, 96%);
+  --colour-body: hsl(0, 0%, 20%);
+
+  border: 10px solid #fff;
+}
+
+body {
+  background-color: var(--colour-background);
+  color: var(--colour-body);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: clamp(1.125rem, 3.25vw, 2rem);
+  line-height: 1.3;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+main {
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  max-width: 36rem;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--colour-highlight);
+}
+
+a:hover {
+  color: var(--colour-highlight);
+}
+
+::selection {
+  background: hsla(31, 100%, 49%, 0.4);
+}
